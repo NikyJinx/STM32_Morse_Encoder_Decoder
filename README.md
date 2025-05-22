@@ -24,7 +24,7 @@ The current implementation is structured around:
 - `Morse.c/h` → Unified and updated logic for all Morse-related functionalities  
 - `lcd_i2c.c/h` → I2C driver for the 1602 LCD
 
-> ⚠️ **Note**:  
+> -> **Note**:  
 > The files `morse_utils.c/h` and `morse_io_utils.c/h` are legacy modules from earlier development phases.  
 > They have been fully merged and refactored into `Morse.c/h` for improved modularity and maintainability.  
 > You may still explore them if you're curious, but they are no longer required.
@@ -36,22 +36,22 @@ The current implementation is structured around:
 ### Option 1: Use the Full Project (Recommended)
 
 1. Clone or download this repository
-2. Open it in **STM32CubeIDE**
-3. The `.ioc` file is already included — all peripheral configurations are ready to use
+2. Open **STM32CubeIDE**
+3. Import the folder into the workspace
+4. The `.ioc` file is already included so all peripheral configurations are ready to use
 
 
 ### Option 2: Integrate into Your Own Project
 
 Starting from scratch in STM32CubeIDE:
 
-1. Create a new STM32 project with your custom `.ioc`
+1. Create a new STM32 project with your custom `.ioc` (If you're using the F401RE, it is recommended to use the same pin config.) 
 2. Copy the following files into the appropriate folders:
    - `Core/Src/Morse.c`
    - `Core/Src/lcd_i2c.c`
    - `Core/Inc/Morse.h`
    - `Core/Inc/lcd_i2c.h`
-3. Add these files to your build
-4. Write your own `main.c` logic using the provided functions
+3. Write your own `main.c` logic using the provided functions
 
 
 
@@ -103,7 +103,7 @@ Starting from scratch in STM32CubeIDE:
 
 A full technical report (including hardware details, software structure, problems and solutions, and final considerations) is available at the following link:
 
-➡️ [View Full Project Report (Word Document)](https://uniroma3-my.sharepoint.com/:w:/g/personal/nik_vitali_stud_uniroma3_it/EdLvl1YhtG5Mnz2qMNDI98cBlhqbKrtx-U_R7HBXcIzhtA?e=VL1X2D)
+-> [View Full Project Report (Word Document)](https://uniroma3-my.sharepoint.com/:w:/g/personal/nik_vitali_stud_uniroma3_it/EdLvl1YhtG5Mnz2qMNDI98cBlhqbKrtx-U_R7HBXcIzhtA?e=VL1X2D)
 
 
 
