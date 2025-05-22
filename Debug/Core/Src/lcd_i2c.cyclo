@@ -1,0 +1,10 @@
+../Core/Src/lcd_i2c.c:30:6:lcd_send_cmd	4
+../Core/Src/lcd_i2c.c:54:6:lcd_send_data	8
+../Core/Src/lcd_i2c.c:98:6:lcd_init	2
+../Core/Src/lcd_i2c.c:130:6:lcd_scroll_auto_tick	6
+../Core/Src/lcd_i2c.c:157:6:lcd_send_string	4
+../Core/Src/lcd_i2c.c:178:6:lcd_put_cur	3
+../Core/Src/lcd_i2c.c:198:6:I2C_Scanner	3
+../Core/Src/lcd_i2c.c:211:6:lcd_clear	3
+../Core/Src/lcd_i2c.c:226:9:lcd_compare_string	5
+../Core/Src/lcd_i2c.c:237:6:lcd_debug_print_shadow_hex	3
